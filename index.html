@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Association — Présentation</title>
+  <meta name="description" content="Site vitrine pour une association : présentation, galerie photos, contact / formulaire Google. Design professionnel et coloré." />
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google font (optionnel) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+ </style>
+
+</head>
+
+
+<body>
+
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <div style="font-weight:700;color:var(--dark-blue)">Phénix</div>
+          <div style="font-size:12px;color:#6b7280">Danse du dragon et lion</div>
+        </div>
+      </div>
+      <nav class="main">
+        <a href="#presentation">Présentation</a>
+        <a href="#photos">Photos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="dots" aria-hidden="true">
+    <a href="#presentation" class="dot-1" aria-label="Présentation"></a>
+    <a href="#photos" class="dot-2" aria-label="Photos"></a>
+    <a href="#contact" class="dot-3" aria-label="Contact"></a>
+  </div>
+
+  <main class="snap-container" id="snap">
+
+    <!-- SECTION 1 : Présentation -->
+    <section id="presentation" class="section" aria-labelledby="titre-presentation">
+      <div class="card">
+        <div class="hero">
+          <div>
+            <span class="eyebrow">Phénix</span>
+            <h1 id="titre-presentation">Danse du dragon et du lion</h1>
+            <p class="lead">En 2025, nous avons fondé notre propre association de danse du dragon et du lion.
+                Nous ne partons toutefois pas de zéro : forts de trois années d’expérience dans ce domaine, nous participons chaque année à différents événements, dont les célébrations du Nouvel An chinois au Luxembourg. </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#contact">Nous rejoindre</a>
+              <a class="btn btn-outline" href="#photos">Voir les photos</a>
+            </div>
+
+            <h3 style="margin-top:20px">Nos participations</h3>
+            <ul style="margin:8px 0 0 18px;color:#334155">
+              <li>Festival nouvel an chinois au luxembourg</li>
+            </ul>
+          </div>
+
+          <aside class="quick" aria-hidden="true">
+            <div style="font-size:18px;font-weight:700">Chiffres clés</div>
+            <ul>
+              <li><strong>10</strong> danseurs de dragon</li>
+              <li><strong>4</strong> danseur de lion</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 : Photos -->
+    <section id="photos" class="section" aria-labelledby="titre-photos">
+      <div class="card">
+        <h2 id="titre-photos">Galerie photos</h2>
+        <p class="muted">Moments capturés lors de nos participations.</p>
+
+        <div class="gallery" style="margin-top:16px">
+          <!-- Remplacez les URLs suivantes par vos images réelles -->
+          <img src="1.jpg" alt="Atelier"/>
+          <img src="2.jpg" alt="Réunion"/>
+          <img src="3.jpeg" alt="Nature"/>
+          <img src="4.jpeg" alt="Bénévoles"/>
+          <img src="5.jpg" alt="Événement"/>
+          <img src="6.jpeg" alt="Action"/>
+        </div>
+
+        <p style="margin-top:14px">Pour voir plus de photos ou proposer les vôtres, <a href="#contact">contactez-nous</a> — ou suivez nos réseaux.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 3 : Contact / Formulaire Google -->
+    <section id="contact" class="section" aria-labelledby="titre-contact">
+      <div class="card">
+        <h2 id="titre-contact">Nous contacter</h2>
+        <div class="contact-grid" style="margin-top:12px">
+
+          <div class="contact-card">
+            <h3>Par email</h3>
+            <p class="muted">Pour toute question générale ou proposition de projet avec le dragon ou les lions: <a href="mailto:contact@association.example">contact@association.example</a></p>
+
+            <h3 style="margin-top:12px">Rejoindre un l'équipe</h3>
+            <p class="muted">Si vous souhaitez participer aux entrainements et devenir danseur de lion ou de dragon, remplissez le formulaire d'inscription :</p>
+            <!-- IMPORTANT: remplacez l'URL ci-dessous par votre formulaire Google Forms -->
+            <p style="margin-top:10px"><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/EXEMPLE_FORM_ID/viewform" target="_blank" rel="noopener">Formulaire d'inscription</a></p>
+
+            <h3 style="margin-top:18px">Adresses des entrainements</h3>
+            <p class="muted">Rue du Faing 16, 6810 Chiny</p>
+          </div>
+
+          <div>
+            <h3>Horaires</h3>
+            <p class="muted">Entrainement les dimanches de 10h00 à 12h00</p>
+
+            <h3 style="margin-top:12px">Réseaux</h3>
+            <p class="muted">Suivez-nous : <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a></p>
+
+            <h3 style="margin-top:12px">Petit mot</h3>
+            <p>Notre porte est ouverte : que vous soyez bénévole, partenaire ou curieux, venez échanger — nous valorisons la clarté, le sérieux et la convivialité.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="section" style="min-height:auto;scroll-snap-align:none;background:transparent;padding:28px 5%">
+      <div style="max-width:var(--max-width);margin:0 auto;text-align:center">
+        <div style="font-weight:700;color:var(--dark-blue)">Association Exemple</div>
+        <div style="font-size:13px;color:#6b7280;margin-top:6px">© <span id="annee"></span> — Tous droits réservés</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Scroll snap + intersection observer pour ajouter/supprimer la classe "active" et gérer la nav à points
+    (function(){
+      const sections = document.querySelectorAll('.section');
+      const dots = document.querySelectorAll('.dots a');
+      const options = {root:document.querySelector('.snap-container'), threshold:0.55};
+
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(entry => {
+          const idx = Array.from(sections).indexOf(entry.target);
+          if(entry.isIntersecting){
+            entry.target.classList.add('active');
+            dots.forEach(d=>d.classList.remove('active'));
+            if(dots[idx]) dots[idx].classList.add('active');
+            // set focus for accessibility
+            // entry.target.querySelector('h1,h2')?.focus(); // commented to avoid unexpected focus
+          } else {
+            entry.target.classList.remove('active');
+          }
+        });
+      }, options);
+
+      sections.forEach(s => io.observe(s));
+
+      // Dots click smooth scroll handled via anchor but we ensure focus and small offset
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', (e)=>{
+          const href = a.getAttribute('href');
+          if(!href || href === '#') return;
+          const target = document.querySelector(href);
+          if(target){
+            e.preventDefault();
+            target.scrollIntoView({behavior:'smooth',block:'start'});
+            // update hash without jumping
+            history.replaceState(null,'',href);
+          }
+        });
+      });
+
+      // Keyboard support (pgup/pgdown/arrow keys) for snap container
+      const container = document.getElementById('snap');
+      window.addEventListener('keydown', (e)=>{
+        const activeIndex = Array.from(sections).findIndex(s => s.classList.contains('active'));
+        if(e.key === 'ArrowDown' || e.key === 'PageDown'){
+          e.preventDefault();
+          const next = sections[Math.min(sections.length-1, activeIndex+1)] || sections[0];
+          next.scrollIntoView({behavior:'smooth'});
+        } else if(e.key === 'ArrowUp' || e.key === 'PageUp'){
+          e.preventDefault();
+          const prev = sections[Math.max(0, activeIndex-1)] || sections[sections.length-1];
+          prev.scrollIntoView({behavior:'smooth'});
+        }
+      });
+
+      // current year
+      document.getElementById('annee').textContent = new Date().getFullYear();
+
+    })();
+  </script>
+
+</body>
+</html>
