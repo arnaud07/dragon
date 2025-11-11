@@ -11,7 +11,14 @@
 
   /* reset simple */
   *{box-sizing:border-box}
-  html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--text);background:linear-gradient(180deg,var(--bg),#e9f0f6);}
+  html,body{height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+  color: var(--text);
+
+  /* fond avec ton image bg.png */
+  background: url('bg.png') no-repeat center center fixed;
+  background-size: cover;}
 
   /* Container for snap scrolling */
   .snap-container{
@@ -72,10 +79,19 @@
   .contact-card{padding:18px;border-radius:10px;background:linear-gradient(180deg, rgba(10,166,120,0.08), rgba(255,255,255,0.6));}
 
   /* Fixed header + dot nav */
-  header{position:fixed;left:0;right:0;top:12px;display:flex;justify-content:center;pointer-events:none;z-index:60}
+  header{position:fixed;left:0;right:0;top:0px;display:flex;justify-content:center;pointer-events:none;z-index:60}
   header .topbar{width:100%;max-width:1200px;padding:8px 14px;background:transparent;display:flex;align-items:center;justify-content:space-between;pointer-events:auto}
   .brand{display:flex;gap:12px;align-items:center}
-  .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--dark-blue),var(--green));display:inline-flex;align-items:center;justify-content:center;color:var(--accent-contrast);font-weight:700}
+  .logo{width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #7a002b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-contrast);
+  font-weight: 700;}
+  .imageLogo{width: 110%;height: auto;}
   nav.main a{margin-left:12px;color:var(--dark-blue);text-decoration:none;font-weight:600}
 
   /* dots nav */
@@ -93,15 +109,19 @@
   #presentation{background:linear-gradient(180deg,rgba(11,37,69,0.03),rgba(10,166,120,0.02))}
   #photos{background:linear-gradient(180deg,rgba(10,166,120,0.03),rgba(242,201,76,0.02))}
   #contact{background:linear-gradient(180deg,rgba(242,201,76,0.03),rgba(11,37,69,0.02))}
-
+ 
   /* Responsive */
   @media (max-width:900px){
     .hero{grid-template-columns:1fr}
     .contact-grid{grid-template-columns:1fr}
     .quick{display:none}
-    .dots{right:8px}
+    .dots{right:2px}
+    .section{padding-top: 30%;}
+    header{background: #7a002b; padding: 0%;}
+    header .main{text-size-adjust: 75%;}
   }
 
   /* Small visual helpers */
   .kicker{color:var(--green);font-weight:700}
   .muted{color:#6b7280}
+
